@@ -18,14 +18,6 @@ export default function Navigation() {
           <Image src="/icon-menu.svg" width={40} height={40} alt="menu" />
         </button>
 
-        {/* Overlay when menu is open */}
-        {isOpen && (
-          <div
-            className="fixed inset-0 bg-black opacity-50 z-10"
-            onClick={() => setIsOpen(false)}
-          ></div>
-        )}
-
         {/* Sliding Menu */}
         <div
           className={`fixed top-0 right-0 h-full w-64 bg-white z-20 p-5 transform transition-transform duration-300 ${
